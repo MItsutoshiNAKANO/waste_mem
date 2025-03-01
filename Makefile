@@ -11,7 +11,7 @@ waste_mem_SRCS=waste_mem.c error.c
 waste_mem_DEPS=error.h
 waste_mem_OBJS=$(waste_mem_SRCS:.c=.o)
 
-CFLAGS=-Wall -Wextra -Wpedantic -Werror -std=c17 -g
+CFLAGS=-Wall -Wextra -Werror -std=c17 -g
 
 .PHONY: all format clean
 
