@@ -1,0 +1,23 @@
+---
+##
+# @file
+# @date 2025
+# @copyright
+#   ItSANgo@gmail.com
+#   SPDX-License-Identifier: AGPL-3.0-or-later
+- name: Setup waste_mem
+  hosts: localhost
+  tasks:
+    - name: Update APT
+      become: true
+      ansible.builtin.apt:
+        name: "*"
+    - name: Install packages
+      become: true
+      ansible.builtin.apt:
+        name:
+          - ansible-lint
+          - gcc
+          - make
+          - clang-format
+...
