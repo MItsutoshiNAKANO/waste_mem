@@ -14,7 +14,7 @@
 /// @param line __LINE__.
 /// @param func __func__.
 /// @param fmt The fprintf(3) format string.
-/// @param ap
+/// @param ap The argument list.
 void
 vmy_warn(
     const char *file, long line, const char *func, const char *fmt, va_list ap
