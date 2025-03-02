@@ -10,21 +10,22 @@
 #include <stdarg.h>
 
 /// @brief Warning.
-/// @param ... The arguments.
+/// @param ... The format and arguments.
 #define WARN(...) my_warn(__FILE__, __LINE__, __func__, __VA_ARGS__)
 
 /// @brief Warning.
-/// @param ... The arguments.
+/// @param ... The format and arguments.
 #define WARNX(...) my_warnx(__FILE__, __LINE__, __func__, __VA_ARGS__)
 
 /// @brief Failed and exit.
 /// @param exit_status The exit status.
+/// @param ... The format and arguments.
 #define ERR(exit_status, ...) \
     my_err(__FILE__, __LINE__, __func__, exit_status, __VA_ARGS__)
 
 /// @brief Failed and exit.
 /// @param exit_status The exit status.
-/// @param ... The arguments.
+/// @param ... The format and arguments.
 #define ERRX(exit_status, ...) \
     my_errx(__FILE__, __LINE__, __func__, exit_status, __VA_ARGS__)
 
